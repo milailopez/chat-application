@@ -1,15 +1,16 @@
+// navigation/AppNavigation.js
 import React from 'react';
-import { NavigationContainer } from '@react-navigation/native';
 import { createDrawerNavigator } from '@react-navigation/drawer';
-import HomePage from './components/HomePage';
-import Chat from './components/Chat';
-import Settings from './components/Settings';
-import Login from './components/Login';
-import Register from './components/Register';
+import { NavigationContainer } from '@react-navigation/native';
+import HomePage from '../components/HomePage';
+import Chat from '../components/Chat';
+import Settings from '../components/Settings';
+import Login from '../components/Login';
+import Register from '../components/Register';
 
 const Drawer = createDrawerNavigator();
 
-const App = () => {
+const AppNavigation = () => {
   return (
     <NavigationContainer>
       <Drawer.Navigator initialRouteName="HomePage">
@@ -23,4 +24,4 @@ const App = () => {
   );
 };
 
-export default App;
+export default AppNavigation;
